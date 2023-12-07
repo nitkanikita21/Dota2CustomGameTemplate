@@ -5,10 +5,10 @@
         "postinstall": "node scripts/install.js",
         "launch": "node scripts/launch.js",
         "build": "run-p build:*",
-        "build:panorama": "(set NODE_OPTIONS=--openssl-legacy-provider) && pnpm exec webpack --config modules/panorama/webpack.config.js",
+        "build:panorama": "(set NODE_OPTIONS=--openssl-legacy-provider) && webpack --config modules/panorama/webpack.config.js",
         "build:vscripts": "tstl --project src/vscripts/tsconfig.json",
         "dev": "run-p dev:*",
-        "dev:panorama": "(set NODE_OPTIONS=--openssl-legacy-provider) && pnpm exec webpack --config modules/panorama/webpack.config.js --watch",
+        "dev:panorama": "(set NODE_OPTIONS=--openssl-legacy-provider) && webpack --config modules/panorama/webpack.config.js --watch",
         "dev:vscripts": "tstl --project src/vscripts/tsconfig.json --watch"
     },
     "devDependencies": {
@@ -42,6 +42,5 @@
         "solid-panorama-all-in-jsx": "^0.3.2",
         "solid-panorama-polyfill": "^0.1.9",
         "solid-panorama-runtime": "^0.4.6",
-        "typescript-styled-plugin": "^0.18.3"
     }
 }
