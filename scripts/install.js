@@ -12,7 +12,10 @@ const { getAddonName, getDotaPath } = require("./utils");
 
     for (const directoryName of ["game", "content"]) {
         const sourcePath = path.resolve(__dirname, "..", directoryName);
-        assert(fs.existsSync(sourcePath), `Could not find '${sourcePath}'`);
+        // assert(fs.existsSync(sourcePath), `Could not find '${sourcePath}'`);
+        if(!fs.existsSync(sourcePath)) {
+            fs.mkdirSync(sourcePath)
+        }
 
         const targetRoot = path.join(dotaPath, directoryName, "dota_addons");
         assert(fs.existsSync(targetRoot), `Could not find '${targetRoot}'`);
