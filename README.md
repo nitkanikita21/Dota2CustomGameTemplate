@@ -1,4 +1,4 @@
-# nitika's Dota2CustomGame template
+# nitkanikita21 Dota2CustomGame template
 
 A template for Dota 2 Custom Games built with modern technologies.
 Forked from [TypeScriptAddonTemplate](https://github.com/ModDota/TypeScriptAddonTemplate)
