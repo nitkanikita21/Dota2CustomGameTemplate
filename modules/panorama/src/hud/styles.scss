@@ -2,24 +2,3 @@
     width: 100%;
     height: 100%;
 }
-
-#menu {
-    width: 210px;
-    height: 549px;
-    y: 160px;
-
-    background-image: url("file://{images}/custom_game/menu_bg.png");
-
-    padding: 15px 11px;
-    .hero_box {
-        DOTAHeroImage {
-            width: 64px;
-            height: 36px;
-        }
-        Label {
-            width: 110px;
-            height: 30px;
-            x: 87px;
-        }
-    }
-}

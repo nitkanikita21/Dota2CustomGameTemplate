@@ -9,22 +9,8 @@ function Counter() {
         GameEvents.SendCustomGameEventToServer("released", {})
     })
 
-    createEffect(()=>{
-        GameEvents.SendCustomGameEventToServer("p2s_lvlup", lvl())
-    })
-
     return <>
-        <Panel id="menu" style={{
-            flowChildren: "down"
-        }} >
-            <Panel class={"hero_box"}>
-                <DOTAHeroImage heroname={heroname} />
-                <Label text={heroname} />
-            </Panel>
-            <Label text={"LVL"} />
-            <TextButton text={"+"} class={"ButtonBevel"} onactivate={() => setLvl(lvl()+1)} />
-
-        </Panel>
+        <Label text={"Hello world"} />
     </>
 }
 
